@@ -68,6 +68,9 @@ function shorten_path() {
   printf "$short_path"
 }
 
+# TODO: where is the git-prompt on mac?
+. /usr/local/bin/git-prompt.sh
+
 PS1=" \u "
 PS1+="\h "
 PS1+="\$(shorten_path) "
