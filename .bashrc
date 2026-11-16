@@ -38,6 +38,10 @@ if [[ -f /opt/homebrew/opt/nvm/nvm.sh ]]; then
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 fi
 
+if [[ -d "$HOME/Library/Android/sdk" ]]; then
+  export ANDROID_HOME="$HOME/LIbrary/Android/sdk"
+fi
+
 # https://github.com/andresgongora/bash-tools/blob/62db15580482853cb3cfb177420e069d1574cf3f/bash-tools/shorten_path.sh
 function shorten_path() {
   local path="$PWD"
